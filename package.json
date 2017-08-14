@@ -5,7 +5,7 @@
   "repository": "https://github.com/peralmq/react-adyen-hpp-button",
   "homepage": "https://github.com/peralmq/react-adyen-hpp-button",
   "license": "MIT",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "lib/index.js",
   "dependencies": {
     "autoprefixer": "7.1.1",
