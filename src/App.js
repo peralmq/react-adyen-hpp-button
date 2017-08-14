@@ -1,11 +1,12 @@
 import React from 'react'
-import AdyenHPPButton from 'components/AdyenHPPButton'
+import { AdyenHPPButton, validateResponseQueryString } from './node_modules'
 
 class App extends React.Component {
   render() {
+      console.log({validateResponseQueryString})
     return (
       <AdyenHPPButton
-        development={false}
+        development={true}
         hmacKey='AdyenSecretKey'
         formData={{
           merchantReference: 'merchantReference',

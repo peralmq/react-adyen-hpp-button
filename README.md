@@ -8,7 +8,7 @@
 ## Usage
 ```jsx
 import React from 'react'
-import AdyenHPPButton, { validateResponseQueryString } from 'react-adyen-hpp-button'
+import {AdyenHPPButton, validateResponseQueryString } from 'react-adyen-hpp-button'
 
 class App extends React.Component {
   render() {
