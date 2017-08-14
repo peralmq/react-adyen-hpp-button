@@ -1,5 +1,5 @@
 import React from 'react'
-import AdyenHPPButton, { validateResponseQueryString } from 'components/AdyenHPPButton'
+import { AdyenHPPButton, validateResponseQueryString } from 'components/AdyenHPPButton'
 
 class App extends React.Component {
   render() {
