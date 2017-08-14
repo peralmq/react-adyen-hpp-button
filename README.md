@@ -8,12 +8,18 @@
 ## Usage
 ```jsx
 import React from 'react'
-import {AdyenHPPButton} from 'react-adyen-hpp-button'
+import AdyenHPPButton, { validateResponseQueryString } from 'react-adyen-hpp-button'
 
 class App extends React.Component {
   render() {
+    const {query} = this.props
+    if (query && validateResponseQueryString(query)) {
+      // Received a callback from Adyen with valid query string parameters
+    }
+
     return (
       <AdyenHPPButton
+        development={false}
         hmacKey='AdyenSecretKey'
         formData={{
           merchantReference: 'merchantReference',
@@ -42,6 +48,7 @@ class App extends React.Component {
     )
   }
 }
+
 export default App
 ```
 

@@ -5,6 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <AdyenHPPButton
+        development={false}
         hmacKey='AdyenSecretKey'
         formData={{
           merchantReference: 'merchantReference',
